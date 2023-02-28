@@ -1,10 +1,25 @@
+
+
 const Hero = () => {
     return (
        
        <div className="hero">
-        <h1>Say hello to my leafy friend...</h1>
-        <img src="../Assets/logo.png"></img>
-       </div> 
+       <div className="hero-text">
+        <h1>
+          Say hello to <br />
+          my leafy friend...
+        </h1>
+      </div>
+      <div className="hero-button">
+        <button><a href="/">Start your free trial</a></button>
+      </div>
+      <div className="hero-image">
+        <img
+          src="./Assets/hero.png"
+          alt="plants on a peachy background"
+        />
+      </div>  
+    </div> 
       )
     }
     
