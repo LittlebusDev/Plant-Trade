@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
       <div className="hero-image">
         <img
-          src="./Assets/hero.png"
+          src={ require('../Images/hero.png')}
           alt="plants on a peachy background"
         />
       </div>  
