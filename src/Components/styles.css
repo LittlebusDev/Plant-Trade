@@ -75,7 +75,7 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-button {
+.hero-button button {
   position: absolute;
   margin-top: 300px;
   margin-left: 61px;
