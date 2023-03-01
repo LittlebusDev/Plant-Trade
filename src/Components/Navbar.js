@@ -1,11 +1,21 @@
+
+
 const Navbar = () => {
-    return (
+  return (
+     
      <nav className="nav">
-        <a href="/Homepage" img src="./src/Components/Images/wordMark.png">
-          Plantrade</a>
+        <a href="/Homepage"> <img src={ require('../Images/Logo.png')}/></a>
       <ul>
-          <li> <a href="/Notifications">Notifications</a></li>
-          <li> <a href="/Profile">Profile</a></li>
+      <li> 
+            <a className="primary-btn" href="/sign-up">
+              sign up
+              </a>
+              </li>
+          <li> 
+            <a className="secondary-btn" href="/login">
+              login
+              </a>
+              </li>
       </ul>
      </nav> 
     )
