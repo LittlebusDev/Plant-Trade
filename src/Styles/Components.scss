@@ -1,5 +1,11 @@
+//Importing variables and pre-set mixin styles
+
 @import "./variables";
 @import "./mixins";
+
+//Styling for all components
+
+//Buttons
 
 #icon-button{
     @include primary-button; 
@@ -9,9 +15,18 @@
         width: 32px;
 }
 
+#primary-button{
+    @include primary-button; 
+        margin-top: none;
+        margin-bottom: none;
+}
+
 .disabled{
     opacity: 30%;
 }
+
+
+//Input
 
 input{
     width: 400px;
@@ -27,6 +42,8 @@ input:focus{
     border-color: $color-dark-green;
 }
 
+
+//Message bubbles
 
 .message{
     background-color: #F8F7F7;
@@ -56,17 +73,6 @@ input:focus{
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-
-#primary-button{
-    @include primary-button; 
-        margin-top: none;
-        margin-bottom: none;
-}
-
-.disabled{
-    opacity: 30%;
 }
 
 
@@ -107,7 +113,6 @@ Input{
     opacity: 30%;
 }
 
-
 .textbox-container{
 
     height: 300px;
@@ -122,4 +127,92 @@ Input{
     }
 
 }
+
+#discussion-title{
+    @include h1;
+}
+
+#create-message{
+    height: 400px;
+
+    TextArea{
+    height: 100px;
+    resize: none;
+    width: 720px;
+    }
+
+    TextArea:focus{
+        outline: none;
+    }
+}
+
+//Product details card
+
+
+#item{
+
+    margin: 48px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+
+
+    img{
+        //max-width: 400px;
+        width: 40%;
+    }
+
+    #details{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 24px;
+        width: 60%;
+        height: auto;
+    
+        .top {
+            @include h3;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+
+            #price{
+                display: flex;
+                flex-direction: row;
+                gap: 3px;
+                justify-content: space-between;
+                align-items: center;
+                max-height: 50px;
+            }
+
+            h1{
+                margin: 0px;
+                max-height: 70px;
+            }
+
+            h3{
+                margin: 0px;
+            }
+
+            .icon{
+                height: 30px;
+            }
+        }
+
+        .bottom{
+            @include body;
+        }
+
+        #buttons{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+}
+
+
+
 

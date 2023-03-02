@@ -6,10 +6,9 @@ import Input from "./Input";
 function SearchBar(props) {
     return ( 
         <div className="wrapper">
-        <label className="Label">input label</label>
         <div className="vertical-wrapper">
-        <Input PlaceHolderText = "Search for your next leafy friend here"/>
-        <PrimaryButton/>
+        <input placeholder = "Search for your next leafy friend here"></input>
+        <PrimaryButton label = 'search'/>
         </div>
         </div>
      );

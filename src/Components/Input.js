@@ -2,8 +2,13 @@ import React from "react";
 import styles from "../Styles/Components.scss";
 
 function Input(props) {
+    const label = props.label;
+
     return ( 
-        <input placeholder={props.PlaceHolderText}></input>    
+        <div>
+        <label className="Label">{label}</label>
+        <input type='text' placeholder={props.PlaceHolderText}></input>    
+        </div>
      );
 }
 

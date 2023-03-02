@@ -10,6 +10,7 @@
     }
     
     @mixin h1{
+        color: $color-dark-brown;
         margin: 0;
         font-family: skolar-pe, sans-serif;
         font-size: 48px;
@@ -19,6 +20,7 @@
     
     @mixin h2{
         margin: 0;
+        font-family: skolar-pe, sans-serif;
         font-size: 24px;
         font-weight: 500;
         text-transform: capitalize;
