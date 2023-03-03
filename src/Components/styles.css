@@ -167,20 +167,26 @@ body {
 
 /* Upload.js */
 .upload-container{
-  max-width: 70%;
+  max-width: 80%;
+  width: 700px;
   margin: 0 auto;
   padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: left;
+  text-align: left;
 }
 
 .upload-img-box{
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #80913B;
+  border-radius: 5px;
+  margin: 10px 0;
+  
 }
 .upload-h2{
-  text-align: left;
+ 
   margin: 5px;
 }
 
