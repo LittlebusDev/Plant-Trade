@@ -52,8 +52,8 @@ input:focus{
     align-items: flex-start;
     flex-direction: row;
     gap: 12px;
-    width: 720px;
-    padding: 6px 12px;
+    width: 500px;
+    padding: 12px;
 
     h4{
         @include h4;
@@ -116,7 +116,7 @@ Input{
 .textbox-container{
 
     height: 300px;
-    width: 720px;
+    width: 100%;
     background-color: blue;
 
     input{
@@ -130,15 +130,28 @@ Input{
 
 #discussion-title{
     @include h1;
+    border-bottom: $color-dark-green 1px solid;
+    padding-left: 20px;
 }
 
 #create-message{
-    height: 400px;
+    //height: 400px;
+    border-top: $color-dark-green 1px solid;
+    padding-top: 20px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 40px;
+    gap: 12px;
 
     TextArea{
+    position: relative;
     height: 100px;
     resize: none;
-    width: 720px;
+    width: 524px;
+    right: 0px;
+    padding: 10px;
     }
 
     TextArea:focus{
@@ -148,16 +161,16 @@ Input{
 
 //Product details card
 
-
 #item{
 
     margin: 48px 24px;
     display: flex;
     flex-direction: row;
     gap: 24px;
+    width: 66%;
 
 
-    img{
+    #item img{
         //max-width: 400px;
         width: 40%;
     }
@@ -175,6 +188,7 @@ Input{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: flex-start;
             width: 100%;
 
             #price{
@@ -202,16 +216,433 @@ Input{
 
         .bottom{
             @include body;
-        }
-
-        #buttons{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 12px;
+            text-align: left;
         }
     }
 }
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.carousel-root{
+  width: 50%;
+
+  .slide{
+    height: 500px;
+    background-color: #80913B;
+
+    div{
+      height: 100%;
+
+      .carousel-image{
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+
+
+
+//Discussions segment
+
+#discussion-container{
+  display: flex;
+  flex-direction: column;
+  //gap: 24px;
+  width: 66%;
+}
+
+#textbox-container{
+    text-align: left;
+
+    p{
+      height: auto;
+      max-width: 100%;
+      min-height: 19px;
+    }
+}
+
+#discussion-title{
+    text-align: left;
+}
+
+#message-author{
+    background-color: $color-light-green;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+#textbox-container-author{
+    text-align: right;
+}
+
+#message-feed{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  align-items: flex-start;
+  height: auto;
+  max-height: 400px;
+  overflow-y: scroll;
+  margin: 0px 20px;
+}
+
+
+//Seller listings
+
+#seller-details{
+
+  width: 66%;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: space-between;
+
+  #left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #username-icon{
+    display: flex;
+    flex-direction: row;  
+    gap: 12px;
+  }
+
+  h3{
+    @include h3;
+  }
+
+  #seller-icon{
+    height: 50px;
+  }
+
+  #username{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .buttons{
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .rating{
+    display: flex;
+    flex-direction: row;
+    //gap: 6px;
+
+    svg{
+      height: 20px;
+      margin: 0;
+    }
+  }
+}
+
+//Transfered over from styles.css
+
+.footer{
+  background-color: #fffae5;
+  height: 60px;
+  width: 100%;
+}
+
+
+.nav {
+    background-color: #fffae5;
+    display: flex;
+    //justify-content: space-between;
+    justify-content: center;
+    gap: 70%;
+    align-items: center;
+    padding: 10px 0px;
+    width: 100%;
+  }
+  
+  .nav img {
+    width: 200px;
+  }
+  
+  .icon {
+    width: 25px;
+  }
+  
+  .nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .primary-btn {
+    background-color: #80913b;
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: "Times New Roman", Times, serif;
+    color: #fffae5;
+  }
+  
+  .secondary-btn {
+    background-color: #f8e7ba;
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    margin: 48px, auto;
+    text-align: left;
+    padding: 5rem, 2rem;
+  }
+  
+  .hero img {
+    margin: 48px;
+    width: 100%;
+    max-width: 1416px;
+    max-height: 716px;
+    border-radius: 59px;
+  }
+  
+  .hero h1 {
+    font-size: 96px;
+    color: #8d562b;
+    position: absolute;
+    padding-left: 61px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .hero-button button {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 61px;
+    min-width: 360px;
+    min-height: 64.71;
+    background-color: #80913b;
+    text-decoration: none;
+    padding: 1.5rem;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  .hero a {
+    text-decoration: none;
+    color: #fffae5;
+    font-size: 32px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  /* CARDS STYLING */
+
+  #reel{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 66%;
+    overflow-x: scroll;
+    padding: 20px;
+    border-left: $color-dark-green 1px solid;
+    border-right: $color-dark-green 1px solid;
+  }
+
+  //Hiding scrollbars
+  
+  ::-webkit-scrollbar {
+    display: none;}
+
+  .plantCardStandard{
+    //background-image: url('../Images/Aglaonema.png');
+    background:linear-gradient( rgba(0, 0, 0, 0.283), rgba(0, 0, 0, 0.589)), url('../Images/Aglaonema.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: #80913B 2px solid;
+    height: 221px;
+    min-width: 167px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+
+    h3{
+      margin: 0;
+      @include h3;
+      text-align: left;
+      color: $color-light-beige;
+    }
+  }
+  
+  .plantCardListing {
+    margin: 10rem;
+  }
+    
+  .outerBox {
+    background-color: #80913b;
+    border-radius: 50px;
+    height: 221px;
+    width: 167px;
+    position: absolute;
+    z-index: 1;
+    display: inline;
+  }
+  
+  .top {
+    //z-index: 2;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #f8e7ba;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    h2{
+      @include h2;
+      margin: 0;
+      width: auto;
+      text-align: left;
+    }
+
+    h1{
+      color: $color-dark-brown;
+    }
+
+    h3{
+      color: $color-dark-brown;
+    }
+  }
+  
+  .textBottom {
+    //z-index: 2;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    color: #f8e7ba;
+    bottom: 10px;
+  }
+  
+  .cardIcon {
+    //z-index: 3;
+    width: 25px;
+    height: 25px;
+  }
+  
+  /* header.js */
+  .header-container{
+    max-width: 80%;
+    margin: 0 auto;
+    height:100px;
+    /* background-image: url(../Images/); */
+  
+  }
+  
+  .header-text-box{
+    position:relative;
+    left: 50px;
+    bottom: 50px;
+  }
+  
+  .header-text{
+    font-weight: bold;
+  
+  }
+  
+  /* Upload.js */
+  .upload-container{
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  
+  .upload-img-box{
+    width: 300px;
+    height: 300px;
+  }
+  .upload-h2{
+    text-align: left;
+    margin: 5px;
+  }
+  
+  /* Signin.js and Register.js */
+  body {
+    margin: 0;
+    
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .auth-form-container,
+  .signin-form,
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    color: #80913B;
+  
+  }
+  
+  @media screen and (min-width: 600px) {
+    .auth-form-container{
+        padding: 5rem;
+        border: 1px solid  #80913B;
+        border-radius: 10px;
+        margin:0.5rem;
+    }
+    
+  }
+  
+  
+  .auth-label {
+    text-align: left;
+    padding: 0.25rem 0;
+  
+  }
+  
+  input {
+    margin: 0.5rem 0; 
+    padding: 1rem;
+    border: solid 0.2px #80913B;
+    border-radius: 3px;
+  }
+  
+  button {
+    border: none;
+    background-color: #80913B;
+    padding: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #F8E7BA;
+  }
+  
+  .link-btn {
+    background:none;
+    color:#8D562B ;
+    text-decoration: underline;
+  
+  
+  }
 
 
 

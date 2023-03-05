@@ -1,8 +1,9 @@
 import React from "react";
-import styles from "../Styles/Components.scss";
+import "../Styles/Components.scss";
 import {ReactComponent as Heart} from '../Images/Heart.svg';
 import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
+import DemoCarousel from "./Carousel";
 
 function ListingDetails(props) {
     const title = props.title;
@@ -14,7 +15,8 @@ function ListingDetails(props) {
 
     return ( 
         <div id="item">
-            <img src={ require('../Images/Aglaonema.png')}></img>
+            {/*<img src={ require('../Images/Aglaonema.png')}></img>*/}
+            <DemoCarousel/>
             <div id="details">
                 <div className="top">
                 <div>
@@ -30,7 +32,7 @@ function ListingDetails(props) {
                     <h4>Description</h4>
                     <p>{details}</p>
                 </div>
-                <div id="buttons">
+                <div class="buttons">
                     <SecondaryButton label = 'add to cart'/>
                     <PrimaryButton label = 'buy now'/>
                 </div>

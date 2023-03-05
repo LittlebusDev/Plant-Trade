@@ -1,15 +1,16 @@
-<div className="plantCardStandard">
-<div className="cardIcon"><img src="/Vector.png" alt="" /></div>
-<div className="innerBox">
-  <img src="https://unsplash.it/400/200" alt="Probably a plant" />
-</div>
-<div className="outerBox">
-  <div className="textTop">
-    <h2>Plant Name</h2>
+import React from "react";
+import {ReactComponent as Heart} from '../Images/Heart.svg';
+
+function Cards() {
+  return ( 
+    <div className="plantCardStandard">
+    <div className="top">
     <h2>$00</h2>
-  </div>
-  <div className="textBottom">
-    <p>SOME INFO ABOUT THE PLANT GOES HERE</p>
-  </div>
+    <Heart className="cardIcon"/>
+    </div>
+        <h3>Plant Name</h3>
 </div>
-</div>
+   );
+}
+
+export default Cards;

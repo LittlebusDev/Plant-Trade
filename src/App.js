@@ -6,6 +6,7 @@ import SearchBar from './Components/SearchBar';
 import MessageBubble from './Components/MessageBubble';
 import Discussion from './Components/Discussion';
 import ListingDetails from './Components/ListingDetails';
+import DetailPage from './Components/DetailPage';
 
 // signin/signup components
 //import { Signin } from "../src/Components/Signin";
@@ -14,8 +15,7 @@ import ListingDetails from './Components/ListingDetails';
 function App() {
   return ( 
   <>
-  <Navbar /> 
-  <Hero />
+  <DetailPage/>
   </>)
 }
 
