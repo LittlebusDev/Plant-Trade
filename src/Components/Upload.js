@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Styles/Components.scss";
-import upload from "./Images/upload.png";
-import Input from "./Components/Input";
+import "../Styles/Components.scss";
+import upload from "../Images/upload.png";
+import Input from "../Components/Input";
 
 
 
