@@ -1,0 +1,15 @@
+//Importing variables and pre-set mixin styles
+
+@import "./variables";
+@import "./mixins";
+
+//Styling for all pages
+
+
+//Styling for Landing 
+.feature-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+//Styling for Browse
