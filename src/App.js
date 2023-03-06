@@ -8,14 +8,18 @@ import Discussion from './Components/Discussion';
 import ListingDetails from './Components/ListingDetails';
 import Upload from './Components/Upload';
 import Header from './Components/Header';
+import Categories from "./Components/Categories";
+import Divider from "./Components/Divider";
+import Card from "./Components/Card";
+import ViewAllListings from "./Components/ViewAllListings";
 
 function App() {
   
   return ( 
   <>
   <Navbar />
-  
-  <Hero />
+
+
   </>
   )
 }
