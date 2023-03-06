@@ -7,6 +7,7 @@ import MessageBubble from './Components/MessageBubble';
 import Discussion from './Components/Discussion';
 import ListingDetails from './Components/ListingDetails';
 import DetailPage from './Components/DetailPage';
+import Footer from './Components/Footer';
 
 // signin/signup components
 // import { Signin } from "../src/Components/Signin";
@@ -18,6 +19,7 @@ function App() {
   <>
   <Navbar /> 
   <Hero />
+  <Footer/>
   </>
   )
 }

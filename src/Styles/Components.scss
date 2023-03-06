@@ -142,7 +142,7 @@ Input{
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    padding-right: 40px;
+    padding-right: px;
     gap: 12px;
 
     TextArea{
@@ -406,19 +406,25 @@ Input{
   }
   
   .hero {
-    position: relative;
+    //position: relative;
     width: 100%;
-    margin: 48px, auto;
+    //margin: 48px, auto;
+    //margin: auto;
     text-align: left;
     padding: 5rem, 2rem;
+    display: flex;
+    justify-content: center;
   }
   
   .hero img {
-    margin: 48px;
-    width: 100%;
-    max-width: 1416px;
-    max-height: 716px;
-    border-radius: 59px;
+    //margin: 48px;
+    //width: 100%;
+    width: 90vw;
+    height: 95vh;
+    margin: 12px auto;
+    //max-width: 1416px;
+    //max-height: 716px;
+    border-radius: 50px;
   }
   
   .hero h1 {
