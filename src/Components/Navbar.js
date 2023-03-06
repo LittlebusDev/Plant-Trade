@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
      
      <nav className="nav">
-        <a href="/Homepage"> <img src={ require('../Images/Logo.png')}/></a>
+        <a href="/Homepage"> <img src={ require('../Images/Logo.png')} /></a>
       <ul>
       <li> 
             <a className="primary-btn" href="/sign-up">
