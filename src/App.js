@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 import './Styles/App.scss';
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
@@ -6,8 +6,6 @@ import SearchBar from './Components/SearchBar';
 import MessageBubble from './Components/MessageBubble';
 import Discussion from './Components/Discussion';
 import ListingDetails from './Components/ListingDetails';
-import DetailPage from './Components/DetailPage';
-import Footer from './Components/Footer';
 
 // signin/signup components
 // import { Signin } from "../src/Components/Signin";
@@ -17,7 +15,8 @@ function App() {
   
   return ( 
   <>
-  <Navbar /> 
+  <Navbar />
+  
   <Hero />
   <Footer/>
   </>
@@ -25,4 +24,6 @@ function App() {
 }
 
 export default App;
+
+
 

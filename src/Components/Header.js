@@ -1,14 +1,16 @@
 import React from "react";
-import styles from "../Styles/Components.scss";
+import  "../Styles/App.scss";
 
 
 function Header() {
     return (
-        <div className="header-container">
-            <div className="header-text-box">
-                <h1 className="header-text">List a plant</h1>
-            </div>
+        <div>
+        <div className="intro-image">
+          <div className = "header-text-box">
+            <h1 className ="header-text">List a plant</h1>
+          </div>
         </div>
+      </div>
     )
 }
 

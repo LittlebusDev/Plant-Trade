@@ -26,6 +26,67 @@
 }
 
 
+// upload.js
+.upload-h2{
+    color: $color-dark-brown;
+    margin: 20px 0;
+    text-align: left;
+}
+.upload-container{
+    margin-top: 50px;
+}
+
+.upload-container button{
+    border: none;
+    width: 100px;
+    margin: 0 50px;
+    background-color: #80913B;
+    padding: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #F8E7BA;
+}
+
+// header.js
+.intro-image{
+    display: block;
+    position: relative ;
+    background-image: url(../Images/header-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 50px;;
+    width: 1200px;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px lightgrey ;
+    }
+
+  @media screen and (max-width: 800px) {
+   
+    .intro-image{ 
+        width: 500px;
+        border-radius: 30px;
+    }
+    .header-text-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+}
+  
+  .header-text-box{
+    display: flex;
+    padding:150px 50px ;
+  }
+  
+  .header-text{
+    font-weight: bold;
+    color: $color-dark-green;
+  
+  }
+
 //Input
 
 input{
