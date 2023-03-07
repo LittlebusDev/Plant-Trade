@@ -1,4 +1,4 @@
-
+import "../Styles/Components.scss" 
 
 const Hero = () => {
     return (
@@ -10,7 +10,7 @@ const Hero = () => {
           my leafy friend...
         </h1>
       </div>
-      <div className="hero-button">
+      <div className="primary-button">
         <button><a href="/">Start your free trial</a></button>
       </div>
       <div className="hero-image">

@@ -2,7 +2,7 @@ import React from "react";
 import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
 import {ReactComponent as Star} from '../Images/Star.svg';
-import Cards from "./Cards";
+import Card from "./Card";
 import Reel from './Reel';
 
 function SellerListing(props) {
