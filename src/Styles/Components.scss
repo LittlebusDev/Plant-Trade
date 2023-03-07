@@ -220,11 +220,27 @@ Input{
     }
 }
 
+//Seller details
+
+.detail-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  //border-top: .5px $color-dark-brown solid;
+  border-bottom: .5px $color-dark-brown solid;
+  width: 100%;
+  height: auto;
+
+  h3{
+    @include h3;
+  }
+}
+
 //Product details card
 
 #item{
 
-    margin: 48px 24px;
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -293,17 +309,21 @@ Input{
   width: 50%;
 
   .slide{
-    height: 500px;
-    background-color: #80913B;
+    height: 400px;
 
     div{
       height: 100%;
 
       .carousel-image{
-        object-fit: cover;
+        height: 400px;
+        width: auto;
       }
     }
   }
+}
+
+.carousel .slide {
+  min-width: 100% !important;
 }
 
 
@@ -573,7 +593,6 @@ Input{
   .top {
     //z-index: 2;
     padding-left: 10px;
-    padding-right: 10px;
     color: #f8e7ba;
     display: flex;
     flex-direction: row;

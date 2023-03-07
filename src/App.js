@@ -6,6 +6,9 @@ import SearchBar from './Components/SearchBar';
 import MessageBubble from './Components/MessageBubble';
 import Discussion from './Components/Discussion';
 import ListingDetails from './Components/ListingDetails';
+import Footer from "./Components/Footer";
+import AccountPage from "./Pages/Account";
+import DetailPage from "./Pages/DetailPage";
 
 // signin/signup components
 // import { Signin } from "../src/Components/Signin";
@@ -16,7 +19,6 @@ function App() {
   return ( 
   <>
   <Navbar />
-  
   <Hero />
   <Footer/>
   </>

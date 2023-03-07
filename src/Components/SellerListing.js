@@ -3,6 +3,7 @@ import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
 import {ReactComponent as Star} from '../Images/Star.svg';
 import Cards from "./Cards";
+import Reel from './Reel';
 
 function SellerListing(props) {
 
@@ -23,12 +24,7 @@ function SellerListing(props) {
                 <SecondaryButton label='Rate seller'/>
                 </div>
             </div>
-            <div id="reel">
-                <Cards/>
-                <Cards/>
-                <Cards/>
-                <Cards/>                
-            </div>
+            <Reel/>
         </div>
     );
 }
