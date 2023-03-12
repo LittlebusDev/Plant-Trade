@@ -145,27 +145,6 @@ body {
   margin-top: 18px;
 }
 
-/* header.js */
-/* .header-container{
-  max-width: 80%;
-  margin: 0 auto;
-  height:100px;
-  background-image: url(../Images/header-image.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-
-}
-
-.header-text-box{
-  /* position:relative; */
-  /* left: 50px;
-  bottom: 50px;
-}
-
-.header-text{
-  font-weight: bold;
-
-} */ */
 
 /* Upload.js */
 .upload-container{
@@ -237,6 +216,7 @@ input {
 }
 
 button {
+  width: 400px;
   border: none;
   background-color: #80913B;
   padding: 15px;
