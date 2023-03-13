@@ -410,3 +410,57 @@ Input{
 .featured{
     text-align: left;
 }
+
+
+
+
+
+
+// Test CSS
+ol{
+    text-align: left;
+}
+.listingTitle{
+    color: $color-dark-brown;
+    margin: 0;
+    font-family: skolar-pe, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+article p{
+    color: $color-dark-green;
+    margin: 0;
+    font-family: skolar-pe, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+
+    input, textarea{
+        width: 400px;
+        padding: 10px 10px;
+        border-radius: 5px;
+        border-color: $color-light-green;
+        border-width: 1px;
+        border-style: solid;
+       
+    }
+    
+    input:focus{
+        outline: none;
+        border-color: $color-dark-green;
+    }
+  
+    
+}
+h2{
+    color: $color-dark-green;
+}
+ul li a{
+    color: $color-dark-brown;
+    margin: 0;
+    font-family: skolar-pe, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
