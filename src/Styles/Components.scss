@@ -359,3 +359,44 @@ Input{
 .featured{
     text-align: left;
 }
+
+//Navigation Styling
+
+.nav {
+    background-color: $color-light-beige;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  
+    .primary-btn {
+        @include primary-button;
+    }
+
+    .secondary-btn {
+        @include secondary-button
+    }
+  
+  .nav img {
+    width: 300px;
+  }
+  
+  .icon {
+    max-width: 52px;
+  }
+  
+  .nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+//Categories Styling
+
+.categories {
+    text-decoration: none;
+    list-style: none;
+}

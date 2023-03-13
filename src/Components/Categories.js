@@ -1,3 +1,5 @@
+import"../Styles/Components.scss"
+
 
 function categories () {
     return (
