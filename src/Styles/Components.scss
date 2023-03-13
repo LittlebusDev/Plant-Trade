@@ -34,12 +34,15 @@
 }
 .upload-container{
     margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+   
 }
 
 .upload-container button{
     border: none;
-    width: 100px;
-    margin: 0 50px;
+    width: 200px;
+    margin: 10px 50px;
     background-color: #80913B;
     padding: 15px;
     border-radius: 3px;
@@ -49,6 +52,12 @@
 }
 
 // header.js
+.header-container{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
 .intro-image{
     display: block;
     position: relative ;
@@ -62,6 +71,18 @@
     border-radius: 30px;
     }
 
+.header-text-box{
+    display: flex;
+    padding:150px 50px ;
+        
+    }
+      
+.header-text{
+    font-weight: bold;
+    color: $color-dark-green;
+      
+      }
+// Smaller screen for header, upload, signin, register------------------
   @media screen and (max-width: 800px) {
    
     .intro-image{ 
@@ -73,18 +94,47 @@
         justify-content: center;
         align-items: center;
   }
-}
-  
-  .header-text-box{
+  .upload-container{
     display: flex;
-    padding:150px 50px ;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 100px;
+    text-align: left;
+
   }
+  .header-container{
+    display: flex;
+    justify-content: center;
+}
+
+.auth-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+   
   
-  .header-text{
-    font-weight: bold;
-    color: $color-dark-green;
+}
+
+}
+// -----------------------------------------------------
+
   
-  }
+ 
+
+.signin-form p{
+    color: red;
+    text-align: left;
+    margin-top: 0px;
+
+}
+.register-form p{
+    color: red;
+    text-align: left;
+    margin-top: 0px;
+}
+
 
 //Input
 
@@ -95,6 +145,7 @@ input{
     border-color: $color-light-green;
     border-width: 1px;
     border-style: solid;
+   
 }
 
 input:focus{
@@ -399,4 +450,57 @@ Input{
 .categories {
     text-decoration: none;
     list-style: none;
+
+
+
+
+
+// Test CSS
+ol{
+    text-align: left;
+}
+.listingTitle{
+    color: $color-dark-brown;
+    margin: 0;
+    font-family: skolar-pe, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+article p{
+    color: $color-dark-green;
+    margin: 0;
+    font-family: skolar-pe, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+
+    input, textarea{
+        width: 400px;
+        padding: 10px 10px;
+        border-radius: 5px;
+        border-color: $color-light-green;
+        border-width: 1px;
+        border-style: solid;
+       
+    }
+    
+    input:focus{
+        outline: none;
+        border-color: $color-dark-green;
+    }
+  
+    
+}
+h2{
+    color: $color-dark-green;
+}
+ul li a{
+    color: $color-dark-brown;
+    margin: 0;
+    font-family: skolar-pe, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
 }

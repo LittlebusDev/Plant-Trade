@@ -10,8 +10,6 @@ function ListingDetails(props) {
     const price = props.price;
     const details = props.details;
 
-
-
     return ( 
         <div id="item">
             <img src={ require('../Images/Aglaonema.png')}></img>
@@ -41,3 +39,5 @@ function ListingDetails(props) {
 }
 
 export default ListingDetails;
+
+
