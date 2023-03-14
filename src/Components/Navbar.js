@@ -1,4 +1,4 @@
-
+import "../Styles/Pages.scss";
 
 const Navbar = () => {
   return (
