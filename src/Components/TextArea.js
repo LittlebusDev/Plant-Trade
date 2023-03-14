@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../Styles/Components.scss";
+import  "../Styles/Components.scss";
 
 function TextArea(props) {
     return ( 

@@ -8,6 +8,7 @@ import { Edit } from "./pages/Edit";
 import { Authentication } from "./pages/Signin-page";
 import CrudTest from "./pages/crud-test-page";
 
+import ItemDetails from "./pages/item-details";
 
 
 
@@ -23,6 +24,8 @@ function App() {
     <Route path="/edit" element={ <Edit/> }/>
     <Route path="/auth" element={ <Authentication/> }/>
     <Route path="/crudtest" element={ <CrudTest/> }/>
+    <Route path="/details" element={ <ItemDetails/> }/>
+
 
 
   </Routes>
