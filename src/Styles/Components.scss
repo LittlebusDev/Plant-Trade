@@ -165,13 +165,17 @@ input:focus{
     gap: 12px;
     width: 720px;
     padding: 6px 12px;
+    margin:0 auto;
+    margin-top:20px;
 
     h4{
         @include h4;
+        text-align: left;
     }
     
     p{
         @include body;
+        text-align: left;
     }
 
     img{
@@ -261,10 +265,21 @@ Input{
     width: 524px;
     right: 0px;
     padding: 10px;
+    width: 720px;
+    border: 1px $color-dark-green solid;
+    border-radius: 10px;
     }
 
     TextArea:focus{
         outline: none;
+    }
+
+    #primary-button{
+        width:200px;
+        font-size: 18px;
+        
+
+
     }
 }
 
@@ -294,11 +309,15 @@ Input{
     display: flex;
     flex-direction: row;
     gap: 24px;
+    margin: 0 auto;
+    width:80%;
+    margin-top: 100px;
+    margin-bottom:100px;
 
 
     img{
         //max-width: 400px;
-        width: 40%;
+        width: 300px;
     }
 
     #details{
@@ -393,6 +412,69 @@ Input{
         min-height: 19px;
       }
   }
+
+
+
+
+@media screen and (max-width:675px){
+    #item{
+        display:block;
+        width:50%;
+        #details {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    .top {
+        @include h3;
+        display: inline-block;
+        flex-direction: row;
+        width:100%;
+        text-align: left;
+     
+      
+        
+    }
+
+      
+       
+        #buttons{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+       
+
+        .bottom{
+            display:block;
+            justify-content: left;
+            align-items: left;
+           
+
+        }
+    }
+    .message{
+        width:500px;
+        height: auto;
+    }
+   
+    #create-message textarea{
+        width:500px;
+       
+      
+    }
+   
+    .top {
+        @include h3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }
+}
 
 // Hero Section
 
@@ -696,3 +778,9 @@ ul li a{
 
 
 
+
+// details
+.detail-btn{
+    width:350px
+    
+}

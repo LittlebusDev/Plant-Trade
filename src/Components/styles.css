@@ -7,6 +7,7 @@ body {
 }
 
 .nav {
+  width:100vw;
   background-color: #fffae5;
   display: flex;
   justify-content: space-around;
@@ -49,6 +50,13 @@ body {
 .nav a {
   color: inherit;
   text-decoration: none;
+}
+
+@media screen and (max-width:675px){
+
+  .nav{
+    width:100vw;
+  }
 }
 
 .hero {

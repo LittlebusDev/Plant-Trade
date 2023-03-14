@@ -14,8 +14,8 @@ function Discussion() {
         <MessageBubble userName = "username" content = "content goes here"/>
         </div>
         <div id="create-message">
-            <TextArea placeholder = "placeholder here"/>
-            <PrimaryButton label ='post message'/>
+            <p><TextArea placeholder = "placeholder here"/></p>
+            <PrimaryButton label ='Post message'/>
         </div>
         </div>
      );
