@@ -5,7 +5,7 @@ import ListingDetails from '../Components/ListingDetails';
 import Categories from "../Components/Categories";
 import Divider from "../Components/Divider";
 import ViewAllListings from "../Components/ViewAllListings";
-
+import Footer from "../Components/Footer";
 
 export function Browse() {
   
@@ -28,6 +28,7 @@ export function Browse() {
   <Divider/>
   <ListingDetails/>
   <Divider/>
+  <Footer/>
 
   </>
   )

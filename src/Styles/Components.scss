@@ -244,18 +244,46 @@ Input{
 }
 
 #create-message{
-    height: 400px;
+    //height: 400px;
+    border-top: $color-dark-green 1px solid;
+    padding-top: 20px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: px;
+    gap: 12px;
 
     TextArea{
+    position: relative;
     height: 100px;
     resize: none;
-    width: 720px;
+    width: 524px;
+    right: 0px;
+    padding: 10px;
     }
 
     TextArea:focus{
         outline: none;
     }
 }
+
+//Seller details
+
+.detail-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    //border-top: .5px $color-dark-brown solid;
+    border-bottom: .5px $color-dark-brown solid;
+    width: 100%;
+    height: auto;
+  
+    h3{
+      @include h3;
+    }
+  }
 
 //Product details card
 
@@ -313,16 +341,58 @@ Input{
 
         .bottom{
             @include body;
+            text-align: left;
         }
 
-        #buttons{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 12px;
         }
     }
-}
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .carousel-root{
+      width: 50%;
+    
+      .slide{
+        height: 400px;
+    
+        div{
+          height: 100%;
+    
+          .carousel-image{
+            height: 400px;
+            width: auto;
+          }
+        }
+      }
+    }
+    
+    .carousel .slide {
+      min-width: 100% !important;
+    }
+    
+//Discussions segment
+
+#discussion-container{
+    display: flex;
+    flex-direction: column;
+    //gap: 24px;
+    width: 66%;
+  }
+  
+  #textbox-container{
+      text-align: left;
+  
+      p{
+        height: auto;
+        max-width: 100%;
+        min-height: 19px;
+      }
+  }
 
 // Hero Section
 
@@ -353,6 +423,44 @@ Input{
     @include h1
 }
 
+
+#reel{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 66%;
+    overflow-x: scroll;
+    padding: 20px;
+    border-left: $color-dark-green 1px solid;
+    border-right: $color-dark-green 1px solid;
+  }
+
+//Hiding scrollbars
+  
+::-webkit-scrollbar {
+    display: none;}
+
+    .plantCardStandard{
+        //background-image: url('../Images/Aglaonema.png');
+        background:linear-gradient( rgba(0, 0, 0, 0.283), rgba(0, 0, 0, 0.589)), url('../Images/Aglaonema.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        border: #80913B 2px solid;
+        height: 221px;
+        min-width: 167px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+    
+        h3{
+          margin: 0;
+          @include h3;
+          text-align: left;
+          color: $color-light-beige;
+        }
+      }
 
 // Cards Styling
 
@@ -403,7 +511,88 @@ Input{
     margin-left: 200px;
     margin-top: 18px;
   }
+  #discussion-title{
+    text-align: left;
 }
+
+#message-author{
+    background-color: $color-light-green;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+#textbox-container-author{
+    text-align: right;
+}
+
+#message-feed{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  align-items: flex-start;
+  height: auto;
+  max-height: 400px;
+  overflow-y: scroll;
+  margin: 0px 20px;
+}
+
+}
+
+//Seller listings
+
+#seller-details{
+
+    width: 66%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: space-between;
+  
+    #left{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  
+    #username-icon{
+      display: flex;
+      flex-direction: row;  
+      gap: 12px;
+    }
+  
+    h3{
+      @include h3;
+    }
+  
+    #seller-icon{
+      height: 50px;
+    }
+  
+    #username{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .buttons{
+      flex-direction: column;
+      gap: 6px;
+    }
+  
+    .rating{
+      display: flex;
+      flex-direction: row;
+      //gap: 6px;
+  
+      svg{
+        height: 20px;
+        margin: 0;
+      }
+    }
+  }
 
 //Feature Styling
 
@@ -504,3 +693,6 @@ ul li a{
     text-transform: capitalize;
 }
 }
+
+
+

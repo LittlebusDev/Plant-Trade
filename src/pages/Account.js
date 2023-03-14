@@ -7,12 +7,12 @@ import Reel from "../Components/Reel";
 import SecondaryButton from "../Components/SecondaryButton";
 import Footer from '../Components/Footer';
 
-function AccountPage(props) {
+export function AccountPage(props) {
 
     var username = props.username;
 
     return ( 
-            <div class='page-container'>
+            <div className='page-container'>
             <Navbar/>
             <div className="page-texture">
                 <h1>{username}</h1>
@@ -65,5 +65,3 @@ function AccountPage(props) {
             </div>
      );
 }
-
-export default AccountPage;
