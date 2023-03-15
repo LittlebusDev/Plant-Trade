@@ -5,11 +5,11 @@ import { Browse } from "./pages/Browse";
 import { Edit } from "./pages/Edit";
 import { Authentication } from "./pages/Signin-page";
 import { AccountPage } from "./pages/Account";
-import { DetailPage } from "./pages/DetailPage";
+import  ItemDetails  from "./pages/item-details";
 import CrudTest from "./pages/crud-test-page";
 
 
-import ItemDetails from "./pages/item-details";
+
 
 
 function App() {
@@ -22,7 +22,6 @@ function App() {
     <Route path="/upload" element={ <UploadPage/> }/>
     <Route path="/browse" element={ <Browse/> }/>
     <Route path="/account" element={ <AccountPage/> }/>
-    {/* <Route path="/details" element={ <DetailPage/> }/> */}
     <Route path="/edit" element={ <Edit/> }/>
     <Route path="/auth" element={ <Authentication/> }/>
     <Route path="/crudtest" element={ <CrudTest/> }/>

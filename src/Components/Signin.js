@@ -72,7 +72,7 @@ export const Signin = (props) => {
         />
         <p>{formErrors.password}</p>
         <button type="submit">
-        <Link to="/Landing" style={{ textDecoration: 'none', color:'#F8E7BA'}}>Log In</Link>
+        <Link to="/" style={{ textDecoration: 'none', color:'#F8E7BA'}}>Log In</Link>
         </button>
 
         <button

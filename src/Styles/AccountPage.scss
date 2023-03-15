@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin:0 auto;
 }
 
 .page-texture{
@@ -33,9 +34,15 @@
     gap: 48px;
     justify-content: space-around;
     align-items: flex-start;
+    margin:0 auto;
 
     h3{
         @include h3;
+        color: $color-dark-brown;
+   
+    }
+    h2{
+        color: $color-dark-brown; 
     }
 
     h4{
@@ -56,6 +63,10 @@
         width: 100%;
     }
 }
+.detail-row{
+    display:flex;
+    text-align: left;
+}
 
 .reel-container{
     width: 66%;
@@ -63,10 +74,30 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
+    margin:0 auto;
 
     #reel{
         width: 95%;
+        display: flex;
+       
     }
+    h2{
+        color: $color-dark-brown; 
+    }
+    #secondary-button{
+        width:100px;
+        margin-left: 30px;
+    }
+}
+
+#reel{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+   margin-left:-200px
 }
 
 #payment-details{
@@ -89,3 +120,31 @@
     align-items: center;
     @include h2;
 }
+
+.reel-card-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+
+
+@media screen and (max-width:675px){
+    #reel{
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+     margin:0 auto;
+     margin-left:-100px;
+    }
+    .reel-label{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        @include h2;
+    }
+}
+
+

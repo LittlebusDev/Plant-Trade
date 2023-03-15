@@ -31,8 +31,8 @@ function ListingDetails(props) {
           <p>{details}</p>
         </div>
         <div className="detail-btn" id="buttons">
-          <SecondaryButton label="Add to Cart" />
-          <PrimaryButton label="Buy Now" />
+          <SecondaryButton className="details-btn" label="Add to Cart" />
+          <PrimaryButton className="details-btn" label="Buy Now" />
         </div>
       </div>
     </div>

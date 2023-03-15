@@ -6,6 +6,7 @@ import DetailRow from "../Components/DetailRow";
 import Reel from "../Components/Reel";
 import SecondaryButton from "../Components/SecondaryButton";
 import Footer from "../Components/Footer";
+import Header from "../Components/Header";
 
 export function AccountPage(props) {
   var username = props.username;
@@ -13,9 +14,8 @@ export function AccountPage(props) {
   return (
     <div class="page-container">
       <Navbar />
-      <div className="page-texture">
-        <h1>{username}</h1>
-      </div>
+      <Header headerName="Hello, Rachael!"/>
+     
       <div id="account-details-2">
         <div id="account-details">
           <h3>Account Details</h3>
@@ -41,25 +41,30 @@ export function AccountPage(props) {
           <PrimaryButton label="update details" />
         </div>
       </div>
+      <hr/>
+
+
       <div className="reel-container">
-        <span className="reel-label">
+        <div className="reel-label">
           <h2>All listings</h2>
           <div className="buttons">
             <PrimaryButton label="See All" />
             <SecondaryButton label="List New Plant" />
           </div>
-        </span>
-        <Reel />
+        </div>
       </div>
+      <Reel/>
+{/* 
       <div className="reel-container">
-        <span className="reel-label">
+        <div className="reel-label">
           <h2>Favourites</h2>
           <div className="buttons">
             <PrimaryButton label="See All" />
           </div>
-        </span>
-        <Reel />
-      </div>
+        </div>
+       
+      </div> */}
+    
       <Footer />
     </div>
   );

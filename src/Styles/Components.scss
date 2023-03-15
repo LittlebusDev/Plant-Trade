@@ -57,6 +57,7 @@
     justify-content: left;
     align-items: left;
     text-align: left;
+    margin: 0 auto;
 }
 .intro-image{
     display: block;
@@ -114,8 +115,9 @@
     align-items: center;
     margin-top: 100px;
    
-  
 }
+
+
 
 }
 // -----------------------------------------------------
@@ -273,10 +275,18 @@ Input{
 
 //Product details card
 
+// .page-container{
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     gap: 24px;
+// }
 
 #item{
 
     margin: 48px 24px;
+    width: 80%;
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -305,6 +315,7 @@ Input{
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
+            text-align: left;
 
             #price{
                 display: flex;
@@ -331,6 +342,7 @@ Input{
 
         .bottom{
             @include body;
+            text-align: left;
         }
 
         #buttons{
@@ -338,31 +350,44 @@ Input{
             flex-direction: row;
             align-items: center;
             gap: 12px;
+      
         }
+    
     }
+    
+    
 }
+// .details-btn{
+//     width:200px;
+//    }
+
+
+
 
 
 
 
 @media screen and (max-width:675px){
+
+  
     #item{
         display:block;
         width:50%;
         #details {
             margin: 0 auto;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
     }
+
+   
     .top {
         @include h3;
         display: inline-block;
         flex-direction: row;
         width:100%;
         text-align: left;
-     
-      
         
     }
 
@@ -375,7 +400,8 @@ Input{
             align-items: center;
             gap: 12px;
         }
-       
+
+      
 
         .bottom{
             display:block;
@@ -402,6 +428,10 @@ Input{
         flex-direction: row;
         justify-content: space-between;
         width: 50%;
+    }
+    .detail-btn{
+        width:350px;
+        
     }
 }
 
@@ -587,10 +617,7 @@ ul li a{
 }
 
 // details
-.detail-btn{
-    width:350px
-    
-}}
+}
 
 // search bar
 
