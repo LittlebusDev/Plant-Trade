@@ -17,11 +17,11 @@ export function Landing() {
   <Hero/>
   <SearchBar />
   <Featured/>
-  <div className='feature-cards' >
+  {/* <div className='feature-cards' >
    <Card/> 
    <Card/> 
    <Card/> 
-  </div>
+  </div> */}
  
 
 

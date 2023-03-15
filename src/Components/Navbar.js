@@ -3,7 +3,7 @@ import "../Styles/Pages.scss";
 const Navbar = () => {
   return (
     <nav className="nav">
-      <a href="/Landing">
+      <a href="/">
         {" "}
         <img src={require("../Images/Logo.png")} />
       </a>
