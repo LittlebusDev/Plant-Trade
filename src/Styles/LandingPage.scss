@@ -1,0 +1,77 @@
+#primary-button{
+    width:100px;
+
+}
+.wrapper{
+    max-width: 70%vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured{
+    max-width: 50%vw;
+    margin-left:100px;
+}
+.feature-cards{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+   
+  
+    
+}
+.plantCardStandard {
+    margin: 5rem;
+    margin-top:10px;
+
+   
+}
+.hero{
+    display: flex;
+   margin: 0 auto;
+   max-width:90%;
+
+}
+.hero .hero-text h1{
+    font-size : 50px;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.vertical-wrapper{
+    align-items: center;
+}
+
+
+
+
+@media screen and (max-width:675px){
+    .feature-cards{
+        width: 70%;
+        flex-direction: column;
+    
+        
+    }
+    .hero .hero-text h1{
+        font-size: 30px;
+        margin-left: 0px;
+    }
+    .hero button{
+        width:200px;
+     
+    }
+    .hero .primary-button a{
+        font-size: 20px;
+       }
+    .hero .primary-button{
+        padding-top:200px;
+       }
+
+    .plantCardStandard {
+       margin-top: 50px;
+        margin-bottom:400px;
+    }
+    
+}

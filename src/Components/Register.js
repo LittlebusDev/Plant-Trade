@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-// import "./styles.css";
+import { Outlet, Link } from "react-router-dom";
+
 import "../Styles/Components.scss";
 
 export const Register = (props) => {
@@ -90,15 +91,16 @@ export const Register = (props) => {
         />
         <p>{formErrors.password}</p>
 
-        <button type="submit">Sign Up</button>
+        <button type="submit"><a href="/landing">Sign Up</a></button>
 
         <button
           className="link-btn"
           onClick={() => props.onFormSwitch("signin")}
-        >
+        > <Link to="/"/>
           Aleady have an accout? Login here.
         </button>
       </form>
+      <Outlet />
     </div>
   );
 };

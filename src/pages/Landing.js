@@ -4,6 +4,8 @@ import Hero from '../Components/Hero';
 import SearchBar from '../Components/SearchBar';
 import Featured from "../Components/Featured";
 import Card from "../Components/Card";
+import "../Styles/LandingPage.scss";
+
  
 
 
@@ -15,11 +17,12 @@ export function Landing() {
   <Hero/>
   <SearchBar />
   <Featured/>
-  <div className='feature-cards'>
+  <div className='feature-cards' >
    <Card/> 
    <Card/> 
    <Card/> 
   </div>
+ 
 
 
   </>

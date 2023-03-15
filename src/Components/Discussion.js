@@ -3,6 +3,8 @@ import MessageBubble from "./MessageBubble";
 import Input from "./Input";
 import PrimaryButton from "./PrimaryButton";
 import TextArea from "./TextArea";
+import "../Styles/Components.scss";
+
 
 function Discussion() {
     return ( 
